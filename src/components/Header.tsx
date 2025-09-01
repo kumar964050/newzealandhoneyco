@@ -27,7 +27,7 @@ const Header = () => {
         {/* Logo / Brand */}
         <div className="flex items-center space-x-2">
           <img
-            src="/src/assets/logo.png" // replace with your image later
+            src="/logo.png" // replace with your image later
             alt="Logo"
             className=" h-15 object-contain"
           />
