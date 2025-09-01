@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "./components/Header";
 
 export default function ProductPage() {
-  const [selectedImg, setSelectedImg] = useState("/src/assets/item-8.png");
+  const [selectedImg, setSelectedImg] = useState("/item-8.png");
 
   const handleNext = () => {};
   const handlePrevious = () => {};
@@ -39,10 +39,10 @@ export default function ProductPage() {
             <div className="grid grid-cols-2 mt-6">
               <div className="aspect-square bg-white flex items-center justify-center rounded-xl shadow">
                 <img
-                  src="/src/assets/item-8.png"
+                  src="/item-8.png"
                   alt={`main image`}
                   className="h-full w-full object-cover"
-                  onClick={() => setSelectedImg("/src/assets/item-8.png")}
+                  onClick={() => setSelectedImg("/item-8.png")}
                 />
               </div>
               {Array.from({ length: 7 }).map((_, i) => (
@@ -51,12 +51,10 @@ export default function ProductPage() {
                   className="aspect-square bg-white flex items-center justify-center rounded-xl shadow"
                 >
                   <img
-                    src={`/src/assets/item-${i + 1}.png`}
+                    src={`/item-${i + 1}.png`}
                     alt={`Thumbnail ${i + 1}`}
                     className="w-full h-full object-cover"
-                    onClick={() =>
-                      setSelectedImg(`/src/assets/item-${i + 1}.png`)
-                    }
+                    onClick={() => setSelectedImg(`/item-${i + 1}.png`)}
                   />
                 </div>
               ))}
@@ -95,7 +93,7 @@ export default function ProductPage() {
                   key={i}
                   className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center"
                 >
-                  <img src="/src/assets/certifications.png" alt="Cert" />
+                  <img src="/certifications.png" alt="Cert" />
                 </div>
               ))}
             </div>
@@ -109,7 +107,7 @@ export default function ProductPage() {
                     key={i}
                     className="border-2 rounded-xl p-3 flex justify-center items-center cursor-pointer hover:border-black"
                   >
-                    <img src="/src/assets/item-8.png" alt="Variant" />
+                    <img src="/item-8.png" alt="Variant" />
                   </div>
                 ))}
               </div>
@@ -150,7 +148,7 @@ export default function ProductPage() {
                       key={i}
                       className="border rounded-xl p-3 flex items-center justify-center"
                     >
-                      <img src="/src/assets/item-8.png" alt="Bundle item" />
+                      <img src="/item-8.png" alt="Bundle item" />
                     </div>
                     {i < 2 ? "+" : ""}
                   </>
